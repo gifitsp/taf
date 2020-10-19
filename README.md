@@ -33,7 +33,7 @@ taf是一个交易应用基础库(Trading Application Foundations)，基于Intel
   * 简单的example的makefile在taf/master/build/下
   * 由于被依赖代码的原因，请使用g++而不是gcc编译，并且必须添加-mavx2（-mavx512f） -std=c++17开关，其中avx2或avx512取决于机器支持的情况（不支持的情况下运行会崩溃）
   * debug/release或其他编译选项等可直接修改makefile
-  * 需要配置TBB库文件的环境变量，比如export LD_LIBRARY_PATH=...:./taf/libs/tbb/bin/linux
+  * 需要配置TBB库文件的环境变量，比如export LD_LIBRARY_PATH=... : ./taf/libs/tbb/bin/linux
   * 编译example：  
     $ cd taf/master/build  
     $ make  
