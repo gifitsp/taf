@@ -14,7 +14,7 @@ taf是一个交易应用基础库(Trading Application Foundations)，基于Intel
 ## 使用准备
 * 需要支持AVX2或AVX512F的机器，可参考：  
   https://stackoverflow.com/questions/28939652/how-to-detect-sse-sse2-avx-avx2-avx-512-avx-128-fma-kcvi-availability-at-compile
-* 字符串搜索的性能可参考：  
+* 字符串的simd搜索可参考：  
   http://0x80.pl/articles/simd-friendly-karp-rabin.html
 * 支持C++17、x64位的编译器
 * TBB已编译依赖库在taf/libs/tbb/bin/下
