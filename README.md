@@ -19,7 +19,7 @@ taf是一个交易应用基础库(Trading Application Foundations)，基于Intel
 * 支持C++17、x64位的编译器
 * TBB已编译依赖库在taf/libs/tbb/bin/下
 
-## 安装编译
+## 编译
 
 **Windows**
   * 请使用Visual Studio 2019或以上版本，版本号不低于16.7.3
