@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{6B24439B-38E4-4CA1-9EE9-FDA9C86518E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "taf", "taf", "{F590D32B-2E1C-4D79-A800-E5A851407578}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\src\libs\taf\frameworks.hpp = ..\..\src\libs\taf\frameworks.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{AD10E40F-BF77-40F1-8993-C6A7AA56937B}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\src\libs\taf\common\common.hpp = ..\..\src\libs\taf\common\common.hpp
+		..\..\src\libs\taf\common\defines.h = ..\..\src\libs\taf\common\defines.h
+		..\..\src\libs\taf\common\stdheaders.h = ..\..\src\libs\taf\common\stdheaders.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "utils", "utils", "{4E275381-2CF9-4268-BEDD-0DF80ADBB359}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\src\libs\taf\common\utils\buffer.hpp = ..\..\src\libs\taf\common\utils\buffer.hpp
+		..\..\src\libs\taf\common\utils\convert.hpp = ..\..\src\libs\taf\common\utils\convert.hpp
+		..\..\src\libs\taf\common\utils\lock_free.hpp = ..\..\src\libs\taf\common\utils\lock_free.hpp
+		..\..\src\libs\taf\common\utils\string.hpp = ..\..\src\libs\taf\common\utils\string.hpp
+		..\..\src\libs\taf\common\utils\sync.hpp = ..\..\src\libs\taf\common\utils\sync.hpp
+		..\..\src\libs\taf\common\utils\system.hpp = ..\..\src\libs\taf\common\utils\system.hpp
+		..\..\src\libs\taf\common\utils\time.hpp = ..\..\src\libs\taf\common\utils\time.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "simd", "simd", "{D5095A33-37D1-4004-A8B8-6EE112560FF0}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\src\libs\taf\common\simd\funcs.h = ..\..\src\libs\taf\common\simd\funcs.h
+		..\..\src\libs\taf\common\simd\simd.hpp = ..\..\src\libs\taf\common\simd\simd.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "details", "details", "{1D3B74C9-41D9-4792-8925-6595A6FB24BB}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\src\libs\taf\common\simd\details\avx2-naive-strstr64.h = ..\..\src\libs\taf\common\simd\details\avx2-naive-strstr64.h
+		..\..\src\libs\taf\common\simd\details\avx512f-strstr-v2.h = ..\..\src\libs\taf\common\simd\details\avx512f-strstr-v2.h
+		..\..\src\libs\taf\common\simd\details\common.h = ..\..\src\libs\taf\common\simd\details\common.h
+		..\..\src\libs\taf\common\simd\details\fixed-memcmp.h = ..\..\src\libs\taf\common\simd\details\fixed-memcmp.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "parellel", "parellel", "{7DDC2EE1-44B0-4727-9211-6F9C37DB8B51}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\src\libs\parellel\parellel.hpp = ..\..\src\libs\parellel\parellel.hpp
+		..\..\src\libs\parellel\tbb.h = ..\..\src\libs\parellel\tbb.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "trading", "trading", "{D0F6077A-4DA2-4C49-805A-1FCF3C91D852}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\src\libs\taf\trading\config.h = ..\..\src\libs\taf\trading\config.h
+		..\..\src\libs\taf\trading\exchange.h = ..\..\src\libs\taf\trading\exchange.h
+		..\..\src\libs\taf\trading\json.h = ..\..\src\libs\taf\trading\json.h
+		..\..\src\libs\taf\trading\log.h = ..\..\src\libs\taf\trading\log.h
+		..\..\src\libs\taf\trading\manager.h = ..\..\src\libs\taf\trading\manager.h
+		..\..\src\libs\taf\trading\strategy.h = ..\..\src\libs\taf\trading\strategy.h
+		..\..\src\libs\taf\trading\structs.h = ..\..\src\libs\taf\trading\structs.h
+		..\..\src\libs\taf\trading\tradeapi.h = ..\..\src\libs\taf\trading\tradeapi.h
+		..\..\src\libs\taf\trading\trading.hpp = ..\..\src\libs\taf\trading\trading.hpp
+		..\..\src\libs\taf\trading\work.h = ..\..\src\libs\taf\trading\work.h
+		..\..\src\libs\taf\trading\work_main.h = ..\..\src\libs\taf\trading\work_main.h
+		..\..\src\libs\taf\trading\work_order.h = ..\..\src\libs\taf\trading\work_order.h
+		..\..\src\libs\taf\trading\work_trade.h = ..\..\src\libs\taf\trading\work_trade.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "example", "test\example\example.vcxproj", "{7834DC4A-72FA-4977-B583-0AE3BF3BB3C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F3D027D2-29EA-452E-A575-4F0F318780C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7834DC4A-72FA-4977-B583-0AE3BF3BB3C2}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{7834DC4A-72FA-4977-B583-0AE3BF3BB3C2}.Debug|x64.ActiveCfg = Debug|x64
+		{7834DC4A-72FA-4977-B583-0AE3BF3BB3C2}.Debug|x64.Build.0 = Debug|x64
+		{7834DC4A-72FA-4977-B583-0AE3BF3BB3C2}.Debug|x86.ActiveCfg = Debug|Win32
+		{7834DC4A-72FA-4977-B583-0AE3BF3BB3C2}.Debug|x86.Build.0 = Debug|Win32
+		{7834DC4A-72FA-4977-B583-0AE3BF3BB3C2}.Release|Any CPU.ActiveCfg = Release|Win32
+		{7834DC4A-72FA-4977-B583-0AE3BF3BB3C2}.Release|x64.ActiveCfg = Release|x64
+		{7834DC4A-72FA-4977-B583-0AE3BF3BB3C2}.Release|x64.Build.0 = Release|x64
+		{7834DC4A-72FA-4977-B583-0AE3BF3BB3C2}.Release|x86.ActiveCfg = Release|Win32
+		{7834DC4A-72FA-4977-B583-0AE3BF3BB3C2}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F590D32B-2E1C-4D79-A800-E5A851407578} = {6B24439B-38E4-4CA1-9EE9-FDA9C86518E7}
+		{AD10E40F-BF77-40F1-8993-C6A7AA56937B} = {F590D32B-2E1C-4D79-A800-E5A851407578}
+		{4E275381-2CF9-4268-BEDD-0DF80ADBB359} = {AD10E40F-BF77-40F1-8993-C6A7AA56937B}
+		{D5095A33-37D1-4004-A8B8-6EE112560FF0} = {AD10E40F-BF77-40F1-8993-C6A7AA56937B}
+		{1D3B74C9-41D9-4792-8925-6595A6FB24BB} = {D5095A33-37D1-4004-A8B8-6EE112560FF0}
+		{7DDC2EE1-44B0-4727-9211-6F9C37DB8B51} = {6B24439B-38E4-4CA1-9EE9-FDA9C86518E7}
+		{D0F6077A-4DA2-4C49-805A-1FCF3C91D852} = {F590D32B-2E1C-4D79-A800-E5A851407578}
+		{7834DC4A-72FA-4977-B583-0AE3BF3BB3C2} = {F3D027D2-29EA-452E-A575-4F0F318780C6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4C55783-7665-45E4-B05E-4284E9253890}
+	EndGlobalSection
+EndGlobal
