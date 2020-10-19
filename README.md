@@ -4,7 +4,7 @@ taf是一个交易应用基础库(Trading Application Foundations)，基于Intel
 ## 特点
 * 使用Intel TBB并行库、SIMD（AVX2+）、内存池、无锁并发队列等优化，尽可能的降低应用执行时间（提供纳秒级时间精度）
 * 非常轻量级的代码框架，尽可能减少不必要的代码
-* 使用标准C++跨平台编译运行（windows/linux），编译安装非常简单，除TBB外无任何依赖（下载包已包括编译好TBB的库文件，无需自己编译安装）
+* 使用标准C++跨平台编译运行（windows/linux），编译安装非常简单，除TBB外无任何依赖（下载包已包括编译好的TBB库文件，无需自己编译安装）
 * 提供基本的订单管理（增、删、查询等），使用者只需关注应用（策略）本身的逻辑
 * 可动态运行和停止应用（策略）实例
 * 提供C接口，可使用Python等其他语言调用（核心代码建议用C++，以提高性能）
@@ -23,7 +23,7 @@ taf是一个交易应用基础库(Trading Application Foundations)，基于Intel
 
 **Windows**
   * 最好使用Visual Studio 2019，版本号不低于16.7.3
-  * sln文件在taf/master/build/msvs/taf.sln，包括libs文件和example工程
+  * sln文件在taf/master/build/msvs/taf.sln，包括libs文件目录和example工程
   * 只能选择x64编译
   * 需要手动检查机器支持avx2或avx512的情况（比如用cpuz），在taf/master/src/libs/taf/common/simd/simd.hpp中手动开关USE_AVX512或USE_AVX512_BELOW宏（其中之一）
   * 需要配置TBB的库文件路径以及环境变量（Configation->Debugging->Environment: path=...），具体可参考example工程属性中的配置
