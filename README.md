@@ -30,9 +30,10 @@ taf是一个交易应用基础库(Trading Application Foundations)，基于Intel
   
 **Linux**
   * 最好是gcc 8.2或以上版本
-  * 简单的example的makefile在taf/master/build/makefile
+  * 简单的example的makefile在taf/master/build/下
   * 由于被依赖代码的原因，请使用g++而不是gcc编译，并且必须添加-mavx2（-mavx512f） -std=c++17开关，其中avx2或avx512取决于机器支持的情况（不支持的情况下运行会崩溃）
   * debug/release或其他编译选项等可直接修改makefile
+  * 需要配置TBB库文件的环境变量，比如export LD_LIBRARY_PATH=...:...taf/libs/tbb/bin/linux
   * 编译example：  
     $ cd taf/master/build  
     $ make  
@@ -42,7 +43,6 @@ taf是一个交易应用基础库(Trading Application Foundations)，基于Intel
   示例文件(taf/master/build/example.cpp)演示了如何定义交易所API类（无状态）、应用（策略）类等，以及多个交易所、多个API组合（在同一个策略类中），包括下单、撤单、查询等（未提供获取行情相关的功能）
   
 ## 其他讨论
-  * 未使用TBB的的concurrent容器，因为在并行量不是很大的情况下，编译器优化的STL的容器消耗更小
+  * 未使用TBB的的concurrent容器，因为在并行量不是很大的情况下，编译器优化的STL容器的消耗更小
   * TBB的pipeline模式需要额外几微秒到10微秒的消耗，故未使用
   * 经测试，example中的测试用例运行稳定后在win10中比在centos7的平均延时更小（均为AVX2）
-
