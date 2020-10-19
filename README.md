@@ -26,7 +26,7 @@ taf是一个交易应用基础库(Trading Application Foundations)，基于Intel
   * sln文件在taf/master/build/msvs/taf.sln，包括libs文件目录和example工程
   * 只能选择x64编译
   * 需要手动检查机器支持avx2或avx512的情况（比如用cpuz），在taf/master/src/libs/taf/common/simd/simd.hpp中手动开关USE_AVX512或USE_AVX512_BELOW宏（其中之一）
-  * 需要添加/std:c++latest到C/C++ Command Line（工程属性里），具体可参考example工程属性中的配置
+  * 需要添加/std:c++latest到C/C++ -> Command Line（工程属性里），可参考example工程属性中的配置
   * 需要配置TBB的库文件路径以及环境变量（Configration->Debugging->Environment: path=...），具体可参考example工程属性中的配置
   
 **Linux**
