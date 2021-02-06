@@ -3,7 +3,7 @@ Taf(Trading Application Foundations) provides a framework for low-latency tradin
 
 ## Features
 * Based on Intel TBB, SIMD(AVX2+), freelock queue, etc to optimize the performance.
-* Nanosecond timing available.
+* Nanosecond timestamp available.
 * Developed with standard C++, corss-platform (windows and linux) is definitely supported.
 * All dependencies included in pack, no need to download any other libs (like TBB).
 * Provide C interface for multiple language calling.
