@@ -10,7 +10,7 @@ Taf(Trading Application Foundations) provides a framework for low-latency tradin
 * The delay for a simple application could be less 10us.
 
 ## Before Compilation
-* Check your hardware to make sure that AVX2 or AVX512F is supported.
+* Check your hardware availability to make sure that AVX2 or AVX512F is supported.
 * C++17 compiler is needed.
 * TBB libs and binary located in taf/libs/tbb/bin/
 
@@ -19,7 +19,7 @@ Taf(Trading Application Foundations) provides a framework for low-latency tradin
   * Must use Visual Studio 2019 or above
   * open taf/master/build/msvs/taf.sln
   * Must select x64 mode
-  * Open taf/master/src/libs/taf/common/simd/simd.hpp to switch USE_AVX512 or USE_AVX512_BELOW micro (already existed in the file), which depends on your hardware.
+  * Open taf/master/src/libs/taf/common/simd/simd.hpp to switch USE_AVX512 or USE_AVX512_BELOW micro (already existed in the file), depending on your hardware.
   * Add /std:c++latest to C/C++ -> Command Line
   * Config TBB env path in Configration->Debugging->Environment: path=..., could refer the properties config in example
   
