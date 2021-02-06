@@ -19,7 +19,7 @@ Taf(Trading Application Foundations) provides a framework for low-latency tradin
   * Must use Visual Studio 2019 or above
   * open taf/master/build/msvs/taf.sln
   * Must select x64 mode
-  * Open taf/master/src/libs/taf/common/simd/simd.hpp to switch USE_AVX512 or USE_AVX512_BELOW micro (already existed), depend on your hardware.
+  * Open taf/master/src/libs/taf/common/simd/simd.hpp to switch USE_AVX512 or USE_AVX512_BELOW micro (already existed in the file), which depends on your hardware.
   * Add /std:c++latest to C/C++ -> Command Line
   * Config TBB env path in Configration->Debugging->Environment: path=..., could refer the properties config in example
   
