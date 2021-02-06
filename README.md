@@ -10,7 +10,7 @@ Taf(Trading Application Foundations) provides a framework for low-latency tradin
 * The delay for a simple application could be less 10us.
 
 ## Before Compilation
-* Chech your hardware to make sure that AVX2 or AVX512F is supported.
+* Check your hardware to make sure that AVX2 or AVX512F is supported.
 * Your compiler must support C++17 and x64
 * TBB libs located in taf/libs/tbb/bin/
 
